@@ -38,6 +38,7 @@ fprintf('=> จะทำการเฉลี่ยข้อมูลโดย�
 first_file = fullfile(path, filenames{1});
 data = readtable(first_file);
 degrees = data.Angle_Degree(1:min_rows);
+
 sum_pot_data = zeros(min_rows, 5);
 
 for i = 1:num_files
